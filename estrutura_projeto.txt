@@ -1,0 +1,127 @@
+Folder PATH listing for volume New Volume
+Volume serial number is DAD3-7B50
+C:.
+|   app.py
+|   app_antigo.py
+|   dados_ranking_estados.csv
+|   dados_ranking_estados_final.csv
+|   dados_ranking_estados_v2.csv
+|   diagnostico.py
+|   estrutura.txt
+|   estrutura_projeto.txt
+|   etl_completo.py
+|   etl_completo_2.py
+|   etl_divida.py
+|   etl_divida_2.py
+|   governadores.csv
+|   grafico_trajetoria_divida.png
+|   guia.pdf
+|   pnad_dados.json
+|   pnad_via_r.py
+|   pnad_windows.py
+|   requirements.txt
+|   temp_pnad_massa_trimestral.R
+|   
++---.github
+|   \---workflows
+|           atualizacao_diaria.yaml
+|           
++---auditoria
+|   |   conversa.txt
+|   |   CUserscerquDocumentsmonitor_fiscalp.txt
+|   |   Tabela Despesas 2018.csv
+|   |   Tabela Despesas com pessoal 2018.csv
+|   |   Tabela Dívida Consolidada Líquida 2018.csv
+|   |   Tabela Dívida Consolidada Líquida 2025.csv
+|   |   Tabela Meta Fiscal para o Resultado Primário 2022.csv
+|   |   Tabela Receita Corrente Líquida 2018.csv
+|   |   Tabela Receitas Orçamentárias 2018.csv
+|   |   Tabela resultado Primario Acima da Linha 2022.csv
+|   |   Tabela resultado Primario Acima da Linha 2024.csv
+|   |   Tabela Resultado Primário - Acima da Linha 2018.csv
+|   |   
+|   \---rj
++---claude
+|       .Rhistory
+|       etl_completo_corrigido (1).py
+|       GUIA_PNAD_VIA_R.md
+|       GUIA_RAPIDO (1).md
+|       GUIA_RAPIDO.md
+|       pnad_via_r.py
+|       README_CORRECOES.md
+|       RESUMO_PNAD.md
+|       testar_validacao.py
+|       
++---dados_brutos
+|   +---2018
+|   +---2022
+|   +---2024
+|   |   +---meta_primario
+|   |   |       2024_2bim_meta_primario.csv
+|   |   |       2024_3bim_meta_primario.csv
+|   |   |       2024_4bim_meta_primario.csv
+|   |   |       2024_5bim_meta_primario.csv
+|   |   |       2024_6bim_meta_primario (2).csv
+|   |   |       2024_6bim_meta_primario.csv
+|   |   |       finbraRREO_ESTDF_MetaFiscalparaoResultadoPrimario (1).zip
+|   |   |       finbraRREO_ESTDF_MetaFiscalparaoResultadoPrimario (2).zip
+|   |   |       finbraRREO_ESTDF_MetaFiscalparaoResultadoPrimario (3).zip
+|   |   |       finbraRREO_ESTDF_MetaFiscalparaoResultadoPrimario (4).zip
+|   |   |       finbraRREO_ESTDF_MetaFiscalparaoResultadoPrimario (5).zip
+|   |   |       finbraRREO_ESTDF_MetaFiscalparaoResultadoPrimario (6).zip
+|   |   |       
+|   |   +---receita_corrente_liquida
+|   |   |       2024_1bim_receita_corrente_liquida.csv
+|   |   |       2024_2bim_receita_corrente_liquida.csv
+|   |   |       2024_3bim_receita_corrente_liquida.csv
+|   |   |       2024_4bim_receita_corrente_liquida.csv
+|   |   |       2024_5bim_receita_corrente_liquida.csv
+|   |   |       2024_6bim_receita_corrente_liquida.csv
+|   |   |       finbraRREO_ESTDF_Previsaoatualizadaexercicio (2).zip
+|   |   |       finbraRREO_ESTDF_Previsaoatualizadaexercicio (3).zip
+|   |   |       finbraRREO_ESTDF_Previsaoatualizadaexercicio (4).zip
+|   |   |       finbraRREO_ESTDF_Previsaoatualizadaexercicio (5).zip
+|   |   |       finbraRREO_ESTDF_Previsaoatualizadaexercicio (6).zip
+|   |   |       finbraRREO_ESTDF_Previsaoatualizadaexercicio (7).zip
+|   |   |       
+|   |   \---resultado_primario
+|   |           2024_1bim_resultado_primario_acima_da_linha.csv
+|   |           2024_2bim_resultado_primario_acima_da_linha.csv
+|   |           2024_3bim_resultado_primario_acima_da_linha.csv
+|   |           2024_4bim_resultado_primario_acima_da_linha.csv
+|   |           2024_5bim_resultado_primario_acima_da_linha.csv
+|   |           2024_6bim_resultado_primario_acima_da_linha.csv
+|   |           finbraRREO_ESTDF_ResultadoPrimario-AcimadaLinha (2).zip
+|   |           finbraRREO_ESTDF_ResultadoPrimario-AcimadaLinha (3).zip
+|   |           finbraRREO_ESTDF_ResultadoPrimario-AcimadaLinha (4).zip
+|   |           finbraRREO_ESTDF_ResultadoPrimario-AcimadaLinha (5).zip
+|   |           finbraRREO_ESTDF_ResultadoPrimario-AcimadaLinha (6).zip
+|   |           finbraRREO_ESTDF_ResultadoPrimario-AcimadaLinha (7).zip
+|   |           finbraRREO_ESTDF_ResultadoPrimario-AcimadaLinha (8).zip
+|   |           
+|   +---2025
+|   \---2026
+\---pnad_cache
+        Deflatores.zip
+        deflator_PNADC_2025_trimestral_070809.xls
+        Dicionario_e_input.zip
+        dicionario_PNADC_microdados_trimestral.xls
+        input_PNADC_trimestral.sas
+        input_PNADC_trimestral.txt
+        PNADC_012018.txt
+        PNADC_012018_20250815.zip
+        PNADC_012019.txt
+        PNADC_012019_20250815.zip
+        PNADC_022018.txt
+        PNADC_022018_20250815.zip
+        PNADC_022019.txt
+        PNADC_022019_20250815.zip
+        PNADC_032018.txt
+        PNADC_032018_20250815.zip
+        PNADC_032019.txt
+        PNADC_032019_20250815.zip
+        PNADC_032024.txt
+        PNADC_032024_20250815.zip
+        PNADC_042018.txt
+        PNADC_042018_20250815.zip
+        
