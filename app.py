@@ -28,44 +28,26 @@ st.markdown("""
 ARQ_DADOS = "dados_ranking_estados.csv"
 ARQ_GOV = "governadores.csv"
 
+# Configuração simplificada - apenas Poupança Fiscal por enquanto
+# (DCL e DTP requerem CSVs adicionais do RGF)
 CONFIG_METRICAS = {
-    "Endividamento": {
-        "col_inicial": "DCL_RCL_Pct_Inicial", 
-        "col_atual": "DCL_RCL_Pct_Atual", 
-        "col_delta": "Delta_DCL_pp",
-        "titulo_grafico": "Variação do Endividamento (DCL/RCL)", 
-        "desc_eixo": "Variação (pp)",
-        "inverter_cores": True,
-        "sufixo_unidade": " pp",
-        "descricao": "Dívida Consolidada Líquida sobre Receita Corrente Líquida. Mede o endividamento líquido do estado em relação à sua capacidade de arrecadação."
-    },
-    "Gastos com Pessoal": {
-        "col_inicial": "DTP_RCL_Pct_Inicial", 
-        "col_atual": "DTP_RCL_Pct_Atual", 
-        "col_delta": "Delta_DTP_pp",
-        "titulo_grafico": "Variação da Despesa com Pessoal (DTP/RCL)", 
-        "desc_eixo": "Variação (pp)",
-        "inverter_cores": True,
-        "sufixo_unidade": " pp",
-        "descricao": "Despesa Total com Pessoal sobre Receita Corrente Líquida. Mede o comprometimento do orçamento com folha de pagamento."
-    },
     "Poupança Fiscal": {
-        "col_inicial": None,
+        "col_inicial": "Poupanca_Fiscal_Pct",  # Usar a mesma coluna para evitar None
         "col_atual": "Poupanca_Fiscal_Pct",
         "col_delta": "Poupanca_Fiscal_Pct",
-        "titulo_grafico": "Poupança Fiscal no Mandato",
-        "desc_eixo": "% da RCL acumulada",
+        "titulo_grafico": "Poupança Fiscal (Resultado Primário / RCL)",
+        "desc_eixo": "% da RCL",
         "inverter_cores": False,
         "sufixo_unidade": "%",
-        "descricao": """Resultado Primário acumulado dividido pela RCL acumulada do período. 
+        "descricao": """Resultado Primário dividido pela Receita Corrente Líquida do ano mais recente (2024). 
         
 Mede se o governador deixou as contas no azul (superávit) ou no vermelho (déficit).
 
 **Resultado Primário** = Receitas - Despesas (excluindo juros da dívida)
 
-- **Positivo** 🟢: Superávit primário (poupou, pagou dívida)
-- **Negativo** 🔴: Déficit primário (gastou mais, aumentou dívida)
-- **Zero** ⚪: Equilíbrio fiscal perfeito""",
+- **Positivo** 🟢: Superávit primário (poupou, pode pagar dívidas)
+- **Negativo** 🔴: Déficit primário (gastou mais do que arrecadou)
+- **Zero** ⚪: Equilíbrio fiscal""",
         "explicacao_extra": """
 **📖 Por que esse indicador importa?**
 
@@ -73,19 +55,17 @@ O Resultado Primário mostra a VERDADEIRA situação fiscal, excluindo juros (qu
 
 Um governador pode ter **superávit primário** mas ainda pagar muitos juros de dívidas antigas. Mas se ele poupa no primário, está no caminho certo para reduzir o endividamento.
 
-**Exemplo:** +2.5% significa que o estado economizou 2.5% da sua receita ao longo do mandato, diminuindo o endividamento.
-
-**Comparação Nacional:**
-- Meta Federal 2024: 0% (equilíbrio)
-- Padrão Internacional: +1% a +3% do PIB
+**Exemplo:** +5% significa que o estado economizou 5% da sua receita, diminuindo o endividamento.
 
 **Fonte dos Dados:**
-RREO Anexo 10 - Demonstrativo dos Resultados Primário e Nominal (SICONFI)
+RREO Anexo 06 - Demonstrativo dos Resultados Primário e Nominal (SICONFI)
         """
     },
 }
 
 OPCOES_ORDENACAO = ["Melhor Desempenho", "Pior Desempenho", "Ordem Alfabética"]
+
+
 # === FUNÇÕES AUXILIARES ===
 def limpar_nome(series: pd.Series) -> pd.Series:
     """Remove prefixos comuns de nomes de estados."""
@@ -124,13 +104,6 @@ def formatar_nome_gov(label: str) -> str:
 def kpi_card(titulo: str, valor: str, delta: float, invert: bool, sufixo: str) -> str:
     """
     Gera HTML para um card KPI com indicador de melhora/piora.
-    
-    Args:
-        titulo: Título do KPI
-        valor: Valor principal (nome do governador/estado)
-        delta: Variação em pontos percentuais
-        invert: Se True, negativo é bom
-        sufixo: Sufixo para o delta (ex: " pp")
     """
     # Define se a variação é boa ou ruim
     good = (delta < 0) if invert else (delta > 0)
@@ -159,9 +132,6 @@ def kpi_card(titulo: str, valor: str, delta: float, invert: bool, sufixo: str) -
 def load_data() -> Optional[pd.DataFrame]:
     """
     Carrega e processa os dados de ranking dos estados e governadores.
-    
-    Returns:
-        DataFrame processado ou None em caso de erro
     """
     try:
         # Carrega dados do ranking
@@ -238,12 +208,17 @@ with c_controls:
     st.markdown("---")
     col1, col2 = st.columns([2, 1])
     
-    metrica_selecionada = col1.radio(
-        "Indicador", 
-        list(CONFIG_METRICAS.keys()), 
-        horizontal=True, 
-        label_visibility="collapsed"
-    )
+    # Se só tem uma métrica, não precisa de radio
+    if len(CONFIG_METRICAS) == 1:
+        metrica_selecionada = list(CONFIG_METRICAS.keys())[0]
+        col1.markdown(f"**Indicador:** {metrica_selecionada}")
+    else:
+        metrica_selecionada = col1.radio(
+            "Indicador", 
+            list(CONFIG_METRICAS.keys()), 
+            horizontal=True, 
+            label_visibility="collapsed"
+        )
     
     ordenacao = col2.selectbox(
         "Ordenar", 
@@ -260,6 +235,8 @@ df = df_raw.copy()
 
 # Validação e conversão das colunas necessárias
 for col in [cfg["col_inicial"], cfg["col_atual"], cfg["col_delta"]]:
+    if col is None:
+        continue
     if col not in df.columns:
         st.warning(f"⚠️ Coluna '{col}' não encontrada nos dados.")
         df[col] = 0.0
@@ -303,19 +280,17 @@ with c_header:
     # Adiciona descrição da métrica
     with st.expander("ℹ️ Sobre este indicador"):
         st.write(f"**{metrica_selecionada}**: {cfg['descricao']}")
-        st.write("**Pontos percentuais (pp)**: Variação entre o início e o fim do mandato.")
         
-        # Se tiver explicação extra (ex: Arrecadação Própria), mostra
+        # Se tiver explicação extra, mostra
         if "explicacao_extra" in cfg:
             st.markdown(cfg["explicacao_extra"])
         else:
-            # Padrão para as outras métricas
             if inv:
                 st.write("✅ **Verde (negativo)**: Melhora - redução do indicador")
                 st.write("❌ **Vermelho (positivo)**: Piora - aumento do indicador")
             else:
-                st.write("✅ **Verde (positivo)**: Melhora - aumento do indicador")
-                st.write("❌ **Vermelho (negativo)**: Piora - redução do indicador")
+                st.write("✅ **Verde (positivo)**: Melhora - superávit fiscal")
+                st.write("❌ **Vermelho (negativo)**: Piora - déficit fiscal")
 
 # === KPIs ===
 with c_kpis:
@@ -341,6 +316,20 @@ with c_kpis:
 # === GRÁFICO ===
 with c_chart:
     if not df.empty:
+        # Construir tooltips dinamicamente (evita None)
+        tooltip_list = [
+            alt.Tooltip("Estado", title="Estado"),
+            alt.Tooltip("Label_Eixo", title="Governador"),
+            alt.Tooltip(cfg["col_delta"], format="+.2f", title="Valor (%)"),
+            alt.Tooltip("Reeleito", title="Reeleito?")
+        ]
+        
+        # Adicionar colunas extras se existirem
+        if "Resultado_Primario_Ano_Recente_Bi" in df.columns:
+            tooltip_list.append(alt.Tooltip("Resultado_Primario_Ano_Recente_Bi", format=".2f", title="RP (R$ bi)"))
+        if "RCL_Ano_Recente_Bi" in df.columns:
+            tooltip_list.append(alt.Tooltip("RCL_Ano_Recente_Bi", format=".2f", title="RCL (R$ bi)"))
+        
         # Base do gráfico
         base = alt.Chart(df).encode(
             y=alt.Y(
@@ -355,14 +344,7 @@ with c_chart:
                     labelFontSize=11
                 )
             ),
-            tooltip=[
-                alt.Tooltip("Estado", title="Estado"),
-                alt.Tooltip("Label_Eixo", title="Governador"),
-                alt.Tooltip(cfg["col_delta"], format="+.2f", title="Variação (pp)"),
-                alt.Tooltip(cfg["col_inicial"], format=".2f", title="Valor Inicial (%)"),
-                alt.Tooltip(cfg["col_atual"], format=".2f", title="Valor Atual (%)"),
-                alt.Tooltip("Reeleito", title="Reeleito?")
-            ]
+            tooltip=tooltip_list
         )
 
         # Barras
@@ -417,7 +399,7 @@ with c_chart:
     st.markdown(
         """
         <div style='text-align: right; color: #888; font-size: 0.85rem; margin-top: 10px;'>
-            📊 Fonte: Siconfi/Tesouro Nacional | (R) = Governador Reeleito
+            📊 Fonte: Siconfi/Tesouro Nacional | (R) = Governador Reeleito | Dados: 2024
         </div>
         """, 
         unsafe_allow_html=True
@@ -459,3 +441,11 @@ with st.expander("📈 Estatísticas Detalhadas"):
                     f"{media_nao_reeleitos:.2f}{sufixo}",
                     delta=f"{len(nao_reeleitos)} estados"
                 )
+
+# === TABELA DE DADOS ===
+with st.expander("📋 Ver Dados Completos"):
+    cols_exibir = ["Estado", "Label_Eixo", "Poupanca_Fiscal_Pct", 
+                   "Resultado_Primario_Ano_Recente_Bi", "RCL_Ano_Recente_Bi", 
+                   "Diferenca_RP_Meta_Bi", "Reeleito"]
+    cols_disponiveis = [c for c in cols_exibir if c in df.columns]
+    st.dataframe(df[cols_disponiveis].sort_values("Poupanca_Fiscal_Pct", ascending=False))
