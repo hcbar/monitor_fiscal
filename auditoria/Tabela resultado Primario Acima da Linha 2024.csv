@@ -1,0 +1,60 @@
+Exercício: 2024
+Período: 6o. bimestre
+Escopo: Estados/DF
+Anexo 06 - Demonstrativo do Resultado Primário e Nominal
+Tabela: Resultado Primário - Acima da Linha
+Instituição;Cod.IBGE;UF;População;Coluna;Conta;Identificador da Conta;Valor
+Governo do Estado do Mato Grosso do Sul;50;MS;2833742;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";-816011689,04
+Governo do Estado do Mato Grosso do Sul;50;MS;2833742;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";-668751957,12
+Governo do Estado do Rio Grande do Sul;43;RS;11088065;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";2156932130,84
+Governo do Estado do Rio Grande do Sul;43;RS;11088065;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";1734077019,8
+Governo do Estado de Santa Catarina;42;SC;7762154;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";2519505074,18
+Governo do Estado de Santa Catarina;42;SC;7762154;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";2569639459,07
+Governo do Estado de Goiás;52;GO;6950976;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";2350124188,12
+Governo do Estado de Goiás;52;GO;6950976;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";2196237713,03
+Governo do Estado do Espírito Santo;32;ES;3975100;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";465138744,19
+Governo do Estado do Espírito Santo;32;ES;3975100;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";101421296,69
+Governo do Estado de Rondônia;11;RO;1616379;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";511881947,09
+Governo do Estado de Rondônia;11;RO;1616379;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";287486655,81
+Governo do Estado do Ceará;23;CE;8936431;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";417230647,02
+Governo do Estado do Ceará;23;CE;8936431;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";22050879,16
+Governo do Estado da Bahia;29;BA;14659023;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";54645113,55
+Governo do Estado da Bahia;29;BA;14659023;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";-302000180,69
+Governo do Estado de Roraima;14;RR;634805;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";224862163,24
+Governo do Estado de Roraima;14;RR;634805;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";-26106552,98
+Governo do Estado de Pernambuco;26;PE;9051113;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";1305075783,32
+Governo do Estado de Pernambuco;26;PE;9051113;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";1211966930,35
+Governo do Estado do Mato Grosso;51;MT;3784239;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";-1162719962,55
+Governo do Estado do Mato Grosso;51;MT;3784239;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";-1573778190,85
+Governo do Estado do Tocantins;17;TO;1584306;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";112212752,54
+Governo do Estado do Tocantins;17;TO;1584306;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";-85502796,19
+Governo do Estado do Acre;12;AC;829780;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";669889295,9
+Governo do Estado do Acre;12;AC;829780;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";686317536,42
+Governo do Estado do Pará;15;PA;8442962;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";-1890220391,49
+Governo do Estado do Pará;15;PA;8442962;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";-1263902151,62
+Governo do Estado do Paraná;41;PR;11835379;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";-816732338,65
+Governo do Estado do Paraná;41;PR;11835379;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";6184433696,39
+Governo do Estado do Piauí;22;PI;3270174;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";-1733005722,17
+Governo do Estado do Piauí;22;PI;3270174;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";-1825922715,39
+Governo do Estado do Maranhão;21;MA;6800605;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";3361964541,35
+Governo do Estado do Maranhão;21;MA;6800605;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";3303942102,82
+Governo do Estado do Rio de Janeiro;33;RJ;16615526;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";1071629655,61
+Governo do Estado do Rio de Janeiro;33;RJ;16615526;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";24031200408,6
+Governo do Estado do Rio Grande do Norte;24;RN;3303953;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";314183267,4
+Governo do Estado do Rio Grande do Norte;24;RN;3303953;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";303139639,06
+Governo do Estado da Paraíba;25;PB;4030961;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";23103237,4
+Governo do Estado da Paraíba;25;PB;4030961;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";-180182416,04
+Governo do Estado de Minas Gerais;31;MG;20732660;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";4536879197,55
+Governo do Estado de Minas Gerais;31;MG;20732660;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";4312390873,69
+Governo do Estado de Alagoas;27;AL;3125254;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";399317766,75
+Governo do Estado de Alagoas;27;AL;3125254;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";177135283,41
+Governo do Estado de Sergipe;28;SE;2211868;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";1668810600,37
+Governo do Estado de Sergipe;28;SE;2211868;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";1679327385,97
+Governo do Estado de São Paulo;35;SP;46024937;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";12941505872,87
+Governo do Estado de São Paulo;35;SP;46024937;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";13403602260,15
+Governo do Distrito Federal;53;DF;2923369;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";-644665912,25
+Governo do Distrito Federal;53;DF;2923369;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";-749181067,24
+Governo do Estado do Amazonas;13;AM;3952262;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";404575321,53
+Governo do Estado do Amazonas;13;AM;3952262;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";-37188553,4
+Governo do Estado do Amapá;16;AP;774268;"VALOR";"RESULTADO PRIMÁRIO (COM RPPS) - Acima da Linha (XXXIV) = (XVIa - (XXXIIa +XXXIIb + XXXIIc))";"siconfi-cor_ResultadoPrimarioComRPPSAcimaDaLinha";444629422,93
+Governo do Estado do Amapá;16;AP;774268;"VALOR";"RESULTADO PRIMÁRIO (SEM RPPS) - Acima da Linha (XXXV) = (XVIIa - (XXXIIIa +XXXIIIb + XXXIIIc))";"siconfi-cor_ResultadoPrimarioSemRPPSAcimaDaLinha";249316273,63
