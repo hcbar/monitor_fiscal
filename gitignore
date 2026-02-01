@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos temporários
+*.tmp
+*.log
+*.bak
+
+# Dados grandes/temporários
+pnad_cache/
+*.zip
+
+# R
+.Rhistory
+.RData
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.zip
